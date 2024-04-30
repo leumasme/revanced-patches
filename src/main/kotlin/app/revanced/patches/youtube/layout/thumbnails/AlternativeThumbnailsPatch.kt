@@ -22,6 +22,7 @@ import app.revanced.patches.youtube.layout.thumbnails.fingerprints.cronet.reques
 import app.revanced.patches.youtube.layout.thumbnails.fingerprints.cronet.request.callback.OnResponseStartedFingerprint
 import app.revanced.patches.youtube.layout.thumbnails.fingerprints.cronet.request.callback.OnSucceededFingerprint
 import app.revanced.patches.youtube.misc.integrations.IntegrationsPatch
+import app.revanced.patches.youtube.misc.navigation.NavigationBarHookPatch
 import app.revanced.patches.youtube.misc.settings.SettingsPatch
 import app.revanced.util.resultOrThrow
 import com.android.tools.smali.dexlib2.AccessFlags
@@ -38,6 +39,7 @@ import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
         IntegrationsPatch::class,
         SettingsPatch::class,
         AddResourcesPatch::class,
+        NavigationBarHookPatch::class
     ],
     compatiblePackages = [
         CompatiblePackage(
@@ -59,7 +61,9 @@ import com.android.tools.smali.dexlib2.immutable.ImmutableMethod
                 "19.06.39",
                 "19.07.40",
                 "19.08.36",
-                "19.09.37"
+                "19.09.38",
+                "19.10.39",
+                "19.11.43"
             ],
         ),
     ],
@@ -127,25 +131,45 @@ object AlternativeThumbnailsPatch : BytecodePatch(
     override fun execute(context: BytecodeContext) {
         AddResourcesPatch(this::class)
 
+        val entries = "revanced_alt_thumbnail_options_entries"
+        val values = "revanced_alt_thumbnail_options_entry_values"
         SettingsPatch.PreferenceScreen.ALTERNATIVE_THUMBNAILS.addPreferences(
-            NonInteractivePreference(
-                "revanced_alt_thumbnail_about",
-                null, // Summary is dynamically updated based on the current settings.
-                tag = "app.revanced.integrations.youtube.settings.preference.AlternativeThumbnailsStatusPreference",
+            ListPreference("revanced_alt_thumbnail_home",
+                summaryKey = null,
+                entriesKey = entries,
+                entryValuesKey = values
             ),
-            SwitchPreference("revanced_alt_thumbnail_dearrow"),
-            SwitchPreference("revanced_alt_thumbnail_dearrow_connection_toast"),
-            TextPreference("revanced_alt_thumbnail_dearrow_api_url"),
+            ListPreference("revanced_alt_thumbnail_subscription",
+                summaryKey = null,
+                entriesKey = entries,
+                entryValuesKey = values
+            ),
+            ListPreference("revanced_alt_thumbnail_library",
+                summaryKey = null,
+                entriesKey = entries,
+                entryValuesKey = values
+            ),
+            ListPreference("revanced_alt_thumbnail_player",
+                summaryKey = null,
+                entriesKey = entries,
+                entryValuesKey = values
+            ),
+            ListPreference("revanced_alt_thumbnail_search",
+                summaryKey = null,
+                entriesKey = entries,
+                entryValuesKey = values
+            ),
             NonInteractivePreference(
                 "revanced_alt_thumbnail_dearrow_about",
                 // Custom about preference with link to the DeArrow website.
                 tag = "app.revanced.integrations.youtube.settings.preference.AlternativeThumbnailsAboutDeArrowPreference",
                 selectable = true,
             ),
-            SwitchPreference("revanced_alt_thumbnail_stills"),
-            ListPreference("revanced_alt_thumbnail_stills_time", summaryKey = null),
-            SwitchPreference("revanced_alt_thumbnail_stills_fast"),
+            SwitchPreference("revanced_alt_thumbnail_dearrow_connection_toast"),
+            TextPreference("revanced_alt_thumbnail_dearrow_api_url"),
             NonInteractivePreference("revanced_alt_thumbnail_stills_about"),
+            SwitchPreference("revanced_alt_thumbnail_stills_fast"),
+            ListPreference("revanced_alt_thumbnail_stills_time", summaryKey = null)
         )
 
         fun MethodFingerprint.alsoResolve(fingerprint: MethodFingerprint) =

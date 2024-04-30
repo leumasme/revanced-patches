@@ -14,7 +14,7 @@ import app.revanced.util.resultOrThrow
 
 @Patch(
     name = "Downloads",
-    description = "Adds support to download videos with an external downloader app" +
+    description = "Adds support to download videos with an external downloader app " +
         "using the in-app download button or a video player action button.",
     dependencies = [
         DownloadsResourcePatch::class,
@@ -35,7 +35,9 @@ import app.revanced.util.resultOrThrow
                 "19.06.39",
                 "19.07.40",
                 "19.08.36",
-                "19.09.37"
+                "19.09.38",
+                "19.10.39",
+                "19.11.43"
             ],
         ),
     ],

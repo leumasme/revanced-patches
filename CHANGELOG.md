@@ -1,3 +1,286 @@
+# [4.8.0-dev.8](https://github.com/ReVanced/revanced-patches/compare/v4.8.0-dev.7...v4.8.0-dev.8) (2024-04-23)
+
+
+### Bug Fixes
+
+* **YouTube - Hide ads:** Fix string typo ([ecc56d6](https://github.com/ReVanced/revanced-patches/commit/ecc56d643a0c4e5f25b933431f097a03d4bf2e69))
+
+# [4.8.0-dev.7](https://github.com/ReVanced/revanced-patches/compare/v4.8.0-dev.6...v4.8.0-dev.7) (2024-04-23)
+
+
+### Bug Fixes
+
+* URL decode path to JAR containing spaces to get JAR manifest ([#3079](https://github.com/ReVanced/revanced-patches/issues/3079)) ([e1bbcb3](https://github.com/ReVanced/revanced-patches/commit/e1bbcb338dd7fce895b606440bd6f040d5486a64))
+
+# [4.8.0-dev.6](https://github.com/ReVanced/revanced-patches/compare/v4.8.0-dev.5...v4.8.0-dev.6) (2024-04-23)
+
+
+### Features
+
+* **YouTube - Hide ads:** Add option to hide the 'Visit store' button on channel pages ([#3077](https://github.com/ReVanced/revanced-patches/issues/3077)) ([03d2cfa](https://github.com/ReVanced/revanced-patches/commit/03d2cfafbf977340456598a848858ac9452c853f))
+
+# [4.8.0-dev.5](https://github.com/ReVanced/revanced-patches/compare/v4.8.0-dev.4...v4.8.0-dev.5) (2024-04-23)
+
+
+### Bug Fixes
+
+* **YouTube - Hide Shorts components:** Rename option title to make it consistent ([4d6e34b](https://github.com/ReVanced/revanced-patches/commit/4d6e34b0540a3334bd77b2b48a1a5e10329171c8))
+
+# [4.8.0-dev.4](https://github.com/ReVanced/revanced-patches/compare/v4.8.0-dev.3...v4.8.0-dev.4) (2024-04-23)
+
+
+### Features
+
+* **YouTube - Comments:** Add option to hide timestamp and emoji buttons ([#3076](https://github.com/ReVanced/revanced-patches/issues/3076)) ([7efe5ae](https://github.com/ReVanced/revanced-patches/commit/7efe5aefb252a2ed908907ff218b879e2ad1a331))
+
+# [4.8.0-dev.3](https://github.com/ReVanced/revanced-patches/compare/v4.8.0-dev.2...v4.8.0-dev.3) (2024-04-22)
+
+
+### Bug Fixes
+
+* Publicize abstract property ([b7c108e](https://github.com/ReVanced/revanced-patches/commit/b7c108ee201c84df31b079f3fecb6cc2f5eaf9f1))
+
+# [4.8.0-dev.2](https://github.com/ReVanced/revanced-patches/compare/v4.8.0-dev.1...v4.8.0-dev.2) (2024-04-21)
+
+
+### Bug Fixes
+
+* Case patch option title correctly ([259c8b4](https://github.com/ReVanced/revanced-patches/commit/259c8b4e58df51d92d7e19417e13afa3848afc73))
+
+# [4.8.0-dev.1](https://github.com/ReVanced/revanced-patches/compare/v4.7.0...v4.8.0-dev.1) (2024-04-21)
+
+
+### Bug Fixes
+
+* **YouTube - Hide video action buttons:** Remove obsolete `hide Shop button` ([#3057](https://github.com/ReVanced/revanced-patches/issues/3057)) ([b5e34f3](https://github.com/ReVanced/revanced-patches/commit/b5e34f3aabc1d9df8c41f92251618243caecdc9f))
+
+
+### Features
+
+* **YouTube - Hide Shorts components:** Hide like / dislike button in video ads ([#3062](https://github.com/ReVanced/revanced-patches/issues/3062)) ([1296985](https://github.com/ReVanced/revanced-patches/commit/12969853adfe530eb6006df38e1a5aa30b28fdf9))
+
+# [4.7.0](https://github.com/ReVanced/revanced-patches/compare/v4.6.0...v4.7.0) (2024-04-21)
+
+
+### Bug Fixes
+
+* **Tumblr - Fix old versions:** Improve reliability by removing remnances of Tumblr Live  ([#2988](https://github.com/ReVanced/revanced-patches/issues/2988)) ([897b4db](https://github.com/ReVanced/revanced-patches/commit/897b4dbce984270ae1fd7de5bd30bd05153e45f2))
+* **YouTube - GmsCore support:** Prompt to disable battery optimizations, if not done already ([#2958](https://github.com/ReVanced/revanced-patches/issues/2958)) ([82acb84](https://github.com/ReVanced/revanced-patches/commit/82acb84b5f6ff0722a2eb080b53da9dd3622502f))
+* **YouTube - Hide ads:** rename `Hide paid content` to `Hide paid promotion label` ([#3026](https://github.com/ReVanced/revanced-patches/issues/3026)) ([17e4ac9](https://github.com/ReVanced/revanced-patches/commit/17e4ac978a2f109fd62469a3163b636cd63c55ae))
+* **YouTube - Hide load more button:** Include patch with `Hide layout components`, and hide button only in search feed  ([#2959](https://github.com/ReVanced/revanced-patches/issues/2959)) ([b007e8e](https://github.com/ReVanced/revanced-patches/commit/b007e8e06a3afad79b40bec1c6a14604f059049c))
+* **YouTube - Hide Shorts components:** Correctly hide Shorts if navigation tab is changed using device back button ([#3007](https://github.com/ReVanced/revanced-patches/issues/3007)) ([e5848e9](https://github.com/ReVanced/revanced-patches/commit/e5848e99c4cc838595164ef673a77fe60d28086b))
+* **YouTube - Player flyout menu:** Add hide Lock screen menu ([#2985](https://github.com/ReVanced/revanced-patches/issues/2985)) ([308de4a](https://github.com/ReVanced/revanced-patches/commit/308de4a63ca99b8d30d6b3242f98d6f0e2aefb37))
+* **YouTube - Spoof device dimensions:** Warn about potential performance issues ([#3039](https://github.com/ReVanced/revanced-patches/issues/3039)) ([9d6f305](https://github.com/ReVanced/revanced-patches/commit/9d6f305b7c923e62b89581d221fedbe1e3f81835))
+* **YouTube Music - Remove upgrade button:** Fix compatibility with latest versions ([#3045](https://github.com/ReVanced/revanced-patches/issues/3045)) ([80de996](https://github.com/ReVanced/revanced-patches/commit/80de99666555694670529bbfe2e0be7a14d66555))
+
+
+### Features
+
+* Add `Hex` patch ([#3034](https://github.com/ReVanced/revanced-patches/issues/3034)) ([3c95aac](https://github.com/ReVanced/revanced-patches/commit/3c95aac838693b354d3a7b0e3dc57c6da5adfa9e))
+* **Amazon:** Add `Always allow deep-linking` patch ([#3000](https://github.com/ReVanced/revanced-patches/issues/3000)) ([a92b7fb](https://github.com/ReVanced/revanced-patches/commit/a92b7fb43c8b1b45577360cdc6d883fe2815c2f2))
+* **Strava - Unlock subscription:** Remove compatible version constraint ([80a5599](https://github.com/ReVanced/revanced-patches/commit/80a55991683d7b22626224fa2935a5bf9bfcbfee))
+* **Twitter:** Add `Sanitize sharing links` patch ([#3003](https://github.com/ReVanced/revanced-patches/issues/3003)) ([186b887](https://github.com/ReVanced/revanced-patches/commit/186b8874157eef1b882b05d491ba1d4ca2809535))
+* **YouTube - Hide layout components:** Add option to hide horizontal shelves ([#2951](https://github.com/ReVanced/revanced-patches/issues/2951)) ([9ae0650](https://github.com/ReVanced/revanced-patches/commit/9ae0650c0005d882299996aa442410bab4261395))
+* **YouTube - Hide layout components:** Hide playables ([8423515](https://github.com/ReVanced/revanced-patches/commit/842351548baa33737db09be1cbca9f87c1951341))
+* **YouTube - Hide Shorts components:** Hide `Shop`, `Location` and `Save sound to playlist` buttons ([#3018](https://github.com/ReVanced/revanced-patches/issues/3018)) ([5210ac4](https://github.com/ReVanced/revanced-patches/commit/5210ac431c191987264865bf8e789ea9f3fdd360))
+* **YouTube - Hide Shorts components:** Hide tagged products, hide search suggestions ([#3019](https://github.com/ReVanced/revanced-patches/issues/3019)) ([e0d2fe5](https://github.com/ReVanced/revanced-patches/commit/e0d2fe5bd2e681b9a5252a8e4ad582cc019b1606))
+* **YouTube - Swipe controls:** Save and restore brightness and add auto-brightness toggle ([#2996](https://github.com/ReVanced/revanced-patches/issues/2996)) ([f6c3bc4](https://github.com/ReVanced/revanced-patches/commit/f6c3bc43190d33e06f49b74fc056d26da1bb014a))
+* **YouTube:** Add 'About' preference to settings menu ([#2981](https://github.com/ReVanced/revanced-patches/issues/2981)) ([5abf894](https://github.com/ReVanced/revanced-patches/commit/5abf89444a3e6a211ec03c242eb9a7847542b08c))
+* **YouTube:** Match overlay icons style to YouTube ([#3023](https://github.com/ReVanced/revanced-patches/issues/3023)) ([6849393](https://github.com/ReVanced/revanced-patches/commit/684939314be3d0d43482f229b2adb033e7aa492a))
+* **YouTube:** Support version `19.09.38`, `19.10.39` and `19.11.43` ([#2971](https://github.com/ReVanced/revanced-patches/issues/2971)) ([730f3e3](https://github.com/ReVanced/revanced-patches/commit/730f3e3a7e058b60f9a8130980ecb0a747fa0a8a))
+* **YT Music - Hide 'Get Music Premium' label:** Remove occurences of label in settings ([#3046](https://github.com/ReVanced/revanced-patches/issues/3046)) ([10e170a](https://github.com/ReVanced/revanced-patches/commit/10e170a7302fdb585efee663ca13c814aea46c54))
+
+# [4.7.0-dev.16](https://github.com/ReVanced/revanced-patches/compare/v4.7.0-dev.15...v4.7.0-dev.16) (2024-04-21)
+
+
+### Features
+
+* **YouTube - Swipe controls:** Save and restore brightness and add auto-brightness toggle ([#2996](https://github.com/ReVanced/revanced-patches/issues/2996)) ([f6c3bc4](https://github.com/ReVanced/revanced-patches/commit/f6c3bc43190d33e06f49b74fc056d26da1bb014a))
+
+# [4.7.0-dev.15](https://github.com/ReVanced/revanced-patches/compare/v4.7.0-dev.14...v4.7.0-dev.15) (2024-04-20)
+
+
+### Features
+
+* **YouTube:** Support version `19.09.38`, `19.10.39` and `19.11.43` ([#2971](https://github.com/ReVanced/revanced-patches/issues/2971)) ([730f3e3](https://github.com/ReVanced/revanced-patches/commit/730f3e3a7e058b60f9a8130980ecb0a747fa0a8a))
+
+# [4.7.0-dev.14](https://github.com/ReVanced/revanced-patches/compare/v4.7.0-dev.13...v4.7.0-dev.14) (2024-04-20)
+
+
+### Features
+
+* **YT Music - Hide 'Get Music Premium' label:** Remove occurences of label in settings ([#3046](https://github.com/ReVanced/revanced-patches/issues/3046)) ([10e170a](https://github.com/ReVanced/revanced-patches/commit/10e170a7302fdb585efee663ca13c814aea46c54))
+
+# [4.7.0-dev.13](https://github.com/ReVanced/revanced-patches/compare/v4.7.0-dev.12...v4.7.0-dev.13) (2024-04-18)
+
+
+### Bug Fixes
+
+* **YouTube Music - Remove upgrade button:** Fix compatibility with latest versions ([#3045](https://github.com/ReVanced/revanced-patches/issues/3045)) ([80de996](https://github.com/ReVanced/revanced-patches/commit/80de99666555694670529bbfe2e0be7a14d66555))
+
+# [4.7.0-dev.12](https://github.com/ReVanced/revanced-patches/compare/v4.7.0-dev.11...v4.7.0-dev.12) (2024-04-18)
+
+
+### Features
+
+* Add `Hex` patch ([#3034](https://github.com/ReVanced/revanced-patches/issues/3034)) ([3c95aac](https://github.com/ReVanced/revanced-patches/commit/3c95aac838693b354d3a7b0e3dc57c6da5adfa9e))
+
+# [4.7.0-dev.11](https://github.com/ReVanced/revanced-patches/compare/v4.7.0-dev.10...v4.7.0-dev.11) (2024-04-18)
+
+
+### Bug Fixes
+
+* **YouTube - Spoof device dimensions:** Warn about potential performance issues ([#3039](https://github.com/ReVanced/revanced-patches/issues/3039)) ([9d6f305](https://github.com/ReVanced/revanced-patches/commit/9d6f305b7c923e62b89581d221fedbe1e3f81835))
+
+# [4.7.0-dev.10](https://github.com/ReVanced/revanced-patches/compare/v4.7.0-dev.9...v4.7.0-dev.10) (2024-04-17)
+
+
+### Features
+
+* **YouTube:** Add 'About' preference to settings menu ([#2981](https://github.com/ReVanced/revanced-patches/issues/2981)) ([5abf894](https://github.com/ReVanced/revanced-patches/commit/5abf89444a3e6a211ec03c242eb9a7847542b08c))
+* **YouTube:** Match overlay icons style to YouTube ([#3023](https://github.com/ReVanced/revanced-patches/issues/3023)) ([6849393](https://github.com/ReVanced/revanced-patches/commit/684939314be3d0d43482f229b2adb033e7aa492a))
+
+# [4.7.0-dev.9](https://github.com/ReVanced/revanced-patches/compare/v4.7.0-dev.8...v4.7.0-dev.9) (2024-04-15)
+
+
+### Bug Fixes
+
+* **YouTube - Hide ads:** rename `Hide paid content` to `Hide paid promotion label` ([#3026](https://github.com/ReVanced/revanced-patches/issues/3026)) ([17e4ac9](https://github.com/ReVanced/revanced-patches/commit/17e4ac978a2f109fd62469a3163b636cd63c55ae))
+
+# [4.7.0-dev.8](https://github.com/ReVanced/revanced-patches/compare/v4.7.0-dev.7...v4.7.0-dev.8) (2024-04-14)
+
+
+### Features
+
+* **YouTube - Hide Shorts components:** Hide tagged products, hide search suggestions ([#3019](https://github.com/ReVanced/revanced-patches/issues/3019)) ([e0d2fe5](https://github.com/ReVanced/revanced-patches/commit/e0d2fe5bd2e681b9a5252a8e4ad582cc019b1606))
+
+# [4.7.0-dev.7](https://github.com/ReVanced/revanced-patches/compare/v4.7.0-dev.6...v4.7.0-dev.7) (2024-04-14)
+
+
+### Features
+
+* **YouTube - Hide layout components:** Hide playables ([8423515](https://github.com/ReVanced/revanced-patches/commit/842351548baa33737db09be1cbca9f87c1951341))
+
+# [4.7.0-dev.6](https://github.com/ReVanced/revanced-patches/compare/v4.7.0-dev.5...v4.7.0-dev.6) (2024-04-12)
+
+
+### Features
+
+* **YouTube - Hide Shorts components:** Hide `Shop`, `Location` and `Save sound to playlist` buttons ([#3018](https://github.com/ReVanced/revanced-patches/issues/3018)) ([5210ac4](https://github.com/ReVanced/revanced-patches/commit/5210ac431c191987264865bf8e789ea9f3fdd360))
+
+# [4.7.0-dev.5](https://github.com/ReVanced/revanced-patches/compare/v4.7.0-dev.4...v4.7.0-dev.5) (2024-04-10)
+
+
+### Bug Fixes
+
+* **YouTube - Hide Shorts components:** Correctly hide Shorts if navigation tab is changed using device back button ([#3007](https://github.com/ReVanced/revanced-patches/issues/3007)) ([e5848e9](https://github.com/ReVanced/revanced-patches/commit/e5848e99c4cc838595164ef673a77fe60d28086b))
+
+# [4.7.0-dev.4](https://github.com/ReVanced/revanced-patches/compare/v4.7.0-dev.3...v4.7.0-dev.4) (2024-04-09)
+
+
+### Features
+
+* **Amazon:** Add `Always allow deep-linking` patch ([#3000](https://github.com/ReVanced/revanced-patches/issues/3000)) ([a92b7fb](https://github.com/ReVanced/revanced-patches/commit/a92b7fb43c8b1b45577360cdc6d883fe2815c2f2))
+* **Twitter:** Add `Sanitize sharing links` patch ([#3003](https://github.com/ReVanced/revanced-patches/issues/3003)) ([186b887](https://github.com/ReVanced/revanced-patches/commit/186b8874157eef1b882b05d491ba1d4ca2809535))
+
+# [4.7.0-dev.3](https://github.com/ReVanced/revanced-patches/compare/v4.7.0-dev.2...v4.7.0-dev.3) (2024-04-09)
+
+
+### Bug Fixes
+
+* **Tumblr - Fix old versions:** Improve reliability by removing remnances of Tumblr Live  ([#2988](https://github.com/ReVanced/revanced-patches/issues/2988)) ([897b4db](https://github.com/ReVanced/revanced-patches/commit/897b4dbce984270ae1fd7de5bd30bd05153e45f2))
+
+# [4.7.0-dev.2](https://github.com/ReVanced/revanced-patches/compare/v4.7.0-dev.1...v4.7.0-dev.2) (2024-04-06)
+
+
+### Features
+
+* **Strava - Unlock subscription:** Remove compatible version constraint ([80a5599](https://github.com/ReVanced/revanced-patches/commit/80a55991683d7b22626224fa2935a5bf9bfcbfee))
+
+# [4.7.0-dev.1](https://github.com/ReVanced/revanced-patches/compare/v4.6.1-dev.3...v4.7.0-dev.1) (2024-04-06)
+
+
+### Features
+
+* **YouTube - Hide layout components:** Add option to hide horizontal shelves ([#2951](https://github.com/ReVanced/revanced-patches/issues/2951)) ([9ae0650](https://github.com/ReVanced/revanced-patches/commit/9ae0650c0005d882299996aa442410bab4261395))
+
+## [4.6.1-dev.3](https://github.com/ReVanced/revanced-patches/compare/v4.6.1-dev.2...v4.6.1-dev.3) (2024-04-06)
+
+
+### Bug Fixes
+
+* **YouTube - GmsCore support:** Prompt to disable battery optimizations, if not done already ([#2958](https://github.com/ReVanced/revanced-patches/issues/2958)) ([82acb84](https://github.com/ReVanced/revanced-patches/commit/82acb84b5f6ff0722a2eb080b53da9dd3622502f))
+
+## [4.6.1-dev.2](https://github.com/ReVanced/revanced-patches/compare/v4.6.1-dev.1...v4.6.1-dev.2) (2024-04-04)
+
+
+### Bug Fixes
+
+* **YouTube - Hide load more button:** Include patch with `Hide layout components`, and hide button only in search feed  ([#2959](https://github.com/ReVanced/revanced-patches/issues/2959)) ([b007e8e](https://github.com/ReVanced/revanced-patches/commit/b007e8e06a3afad79b40bec1c6a14604f059049c))
+
+## [4.6.1-dev.1](https://github.com/ReVanced/revanced-patches/compare/v4.6.0...v4.6.1-dev.1) (2024-04-04)
+
+
+### Bug Fixes
+
+* **YouTube - Player flyout menu:** Add hide Lock screen menu ([#2985](https://github.com/ReVanced/revanced-patches/issues/2985)) ([308de4a](https://github.com/ReVanced/revanced-patches/commit/308de4a63ca99b8d30d6b3242f98d6f0e2aefb37))
+
+# [4.6.0](https://github.com/ReVanced/revanced-patches/compare/v4.5.0...v4.6.0) (2024-04-02)
+
+
+### Bug Fixes
+
+* **Mi Fitness - Fix login:** Patch correct register ([#2942](https://github.com/ReVanced/revanced-patches/issues/2942)) ([dc96942](https://github.com/ReVanced/revanced-patches/commit/dc969422b5d50f21e6ea7a64b67dfc650fee6e36))
+* **Tumblr:** Restore compatibility with latest versions ([#2955](https://github.com/ReVanced/revanced-patches/issues/2955)) ([2954ba7](https://github.com/ReVanced/revanced-patches/commit/2954ba78d21d77308404961f79234bbec606d42e))
+
+
+### Features
+
+* **Tumblr:** Add `Fix old versions` patch ([#2954](https://github.com/ReVanced/revanced-patches/issues/2954)) ([2fde60e](https://github.com/ReVanced/revanced-patches/commit/2fde60eceb0a96fa857c32cd55c1fd7fe776a679))
+
+# [4.6.0-dev.1](https://github.com/ReVanced/revanced-patches/compare/v4.5.1-dev.2...v4.6.0-dev.1) (2024-03-31)
+
+
+### Features
+
+* **Tumblr:** Add `Fix old versions` patch ([#2954](https://github.com/ReVanced/revanced-patches/issues/2954)) ([2fde60e](https://github.com/ReVanced/revanced-patches/commit/2fde60eceb0a96fa857c32cd55c1fd7fe776a679))
+
+## [4.5.1-dev.2](https://github.com/ReVanced/revanced-patches/compare/v4.5.1-dev.1...v4.5.1-dev.2) (2024-03-30)
+
+
+### Bug Fixes
+
+* **Mi Fitness - Fix login:** Patch correct register ([#2942](https://github.com/ReVanced/revanced-patches/issues/2942)) ([dc96942](https://github.com/ReVanced/revanced-patches/commit/dc969422b5d50f21e6ea7a64b67dfc650fee6e36))
+
+## [4.5.1-dev.1](https://github.com/ReVanced/revanced-patches/compare/v4.5.0...v4.5.1-dev.1) (2024-03-30)
+
+
+### Bug Fixes
+
+* **Tumblr:** Restore compatibility with latest versions ([#2955](https://github.com/ReVanced/revanced-patches/issues/2955)) ([2954ba7](https://github.com/ReVanced/revanced-patches/commit/2954ba78d21d77308404961f79234bbec606d42e))
+
+# [4.5.0](https://github.com/ReVanced/revanced-patches/compare/v4.4.0...v4.5.0) (2024-03-30)
+
+
+### Features
+
+* **YouTube - Alternative thumbnails:** Selectively enable for home / subscription / search ([#2926](https://github.com/ReVanced/revanced-patches/issues/2926)) ([8549e1b](https://github.com/ReVanced/revanced-patches/commit/8549e1ba58ad1e1608f5e3ceacd31eeb94578949))
+* **YouTube - GmsCore:** Require ignoring battery optimizations ([#2952](https://github.com/ReVanced/revanced-patches/issues/2952)) ([c0bef25](https://github.com/ReVanced/revanced-patches/commit/c0bef255909ca884838675ca6f7ac5b0e2e21730))
+
+# [4.5.0-dev.2](https://github.com/ReVanced/revanced-patches/compare/v4.5.0-dev.1...v4.5.0-dev.2) (2024-03-30)
+
+
+### Features
+
+* **YouTube - GmsCore:** Require ignoring battery optimizations ([#2952](https://github.com/ReVanced/revanced-patches/issues/2952)) ([c0bef25](https://github.com/ReVanced/revanced-patches/commit/c0bef255909ca884838675ca6f7ac5b0e2e21730))
+
+# [4.5.0-dev.1](https://github.com/ReVanced/revanced-patches/compare/v4.4.0...v4.5.0-dev.1) (2024-03-29)
+
+
+### Features
+
+* **YouTube - Alternative thumbnails:** Selectively enable for home / subscription / search ([#2926](https://github.com/ReVanced/revanced-patches/issues/2926)) ([8549e1b](https://github.com/ReVanced/revanced-patches/commit/8549e1ba58ad1e1608f5e3ceacd31eeb94578949))
+
 # [4.4.0](https://github.com/ReVanced/revanced-patches/compare/v4.3.0...v4.4.0) (2024-03-27)
 
 
