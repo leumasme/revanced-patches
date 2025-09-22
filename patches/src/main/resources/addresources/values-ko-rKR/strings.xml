@@ -48,14 +48,28 @@ Second \"item\" text"</string>
   <string name="revanced_settings_search_hint">설정 검색</string>
   <string name="revanced_settings_search_no_results_title">\'%s\'에 대한 검색 결과가 없습니다</string>
   <string name="revanced_settings_search_no_results_summary">다른 키워드를 검색해 보세요</string>
+  <string name="revanced_settings_search_recent_searches">최근 검색어</string>
   <string name="revanced_settings_search_remove_message">검색 기록에서 삭제하시겠습니까?</string>
+  <string name="revanced_settings_search_clear_history">검색 기록 지우기</string>
+  <string name="revanced_settings_search_clear_history_message">모든 검색 기록을 지우시겠습니까?</string>
+  <string name="revanced_settings_search_tips_title">검색 팁</string>
+  <string name="revanced_settings_search_tips_summary">"• 경로를 탭하여 이동합니다
+• 설정을 길게 탭하여 이동합니다
+• 엔터키를 눌러서 검색어를 기록에 저장합니다
+• 검색할 경우에 대소문자와 구두점이 무시됩니다
+• 상위 설정이 비활성화된 하위 설정 위에 나타납니다"</string>
+  <string name="revanced_settings_search_empty_history_title">검색 기록이 비어 있습니다</string>
+  <string name="revanced_settings_search_empty_history_summary">검색 기록을 저장하려면 검색어를 입력하고 엔터키를 누르세요</string>
+  <string name="revanced_settings_search_history_title">설정 검색 기록 표시하기</string>
+  <string name="revanced_settings_search_history_summary_on">설정 검색 기록을 표시합니다</string>
+  <string name="revanced_settings_search_history_summary_off">설정 검색 기록을 표시하지 않습니다</string>
   <string name="revanced_show_menu_icons_title">ReVanced 설정 아이콘 표시하기</string>
   <string name="revanced_show_menu_icons_summary_on">설정 아이콘을 표시합니다</string>
   <string name="revanced_show_menu_icons_summary_off">설정 아이콘을 표시하지 않습니다</string>
   <string name="revanced_language_title">ReVanced 언어</string>
   <string name="revanced_language_user_dialog_message">"일부 언어의 번역이 누락되었거나 완료되지 않았을 수 있습니다.
 
-새로운 언어를 번역하려면 translate.revanced.app를 방문하세요."</string>
+새로운 언어를 번역하거나 기존 번역을 개선하려면 translate.revanced.app를 방문하세요."</string>
   <string name="revanced_language_DEFAULT">앱 언어</string>
   <string name="revanced_pref_import_export_title">가져오기 / 내보내기</string>
   <string name="revanced_pref_import_export_summary">ReVanced 설정을 가져오거나 내보낼 수 있습니다</string>
@@ -126,6 +140,14 @@ YouTube Premium 사용자라면 이 설정은 필요하지 않을 수 있습니�
   <string name="revanced_debug_logs_clear_buffer_summary">저장된 모든 ReVanced 디버그 로그를 지울 수 있습니다</string>
   <string name="revanced_debug_logs_clear_toast">디버그 로그가 지워졌습니다</string>
   </patch>
+  <patch id="misc.privacy.sanitizeSharingLinksPatch">
+  <string name="revanced_sanitize_sharing_links_title">추적 쿼리를 삭제한 링크 공유하기</string>
+  <string name="revanced_sanitize_sharing_links_summary_on">링크를 공유할 경우에 URL에서 추적 쿼리 매개변수를 삭제합니다 (URL의 뒷부분 \'?si=...\' 이 삭제됨)</string>
+  <string name="revanced_sanitize_sharing_links_summary_off">링크를 공유할 경우에 URL에서 추적 쿼리 매개변수를 삭제하지 않습니다</string>
+  <string name="revanced_replace_music_with_youtube_title">공유 링크를 youtube.com으로 변경</string>
+  <string name="revanced_replace_music_with_youtube_summary_on">공유 링크가 youtube.com을 사용합니다</string>
+  <string name="revanced_replace_music_with_youtube_summary_off">공유 링크가 music.youtube.com을 사용합니다</string>
+  </patch>
   </app>
   <app id="youtube">
   <patch id="misc.settings.settingsPatch">
@@ -142,9 +164,6 @@ YouTube Premium 사용자라면 이 설정은 필요하지 않을 수 있습니�
   <string name="revanced_restore_old_settings_menus_title">이전 설정 메뉴 복원하기</string>
   <string name="revanced_restore_old_settings_menus_summary_on">이전 설정 메뉴를 표시합니다</string>
   <string name="revanced_restore_old_settings_menus_summary_off">이전 설정 메뉴를 표시하지 않습니다</string>
-  <string name="revanced_settings_search_history_title">설정 검색 기록 표시하기</string>
-  <string name="revanced_settings_search_history_summary_on">설정 검색 기록을 표시합니다</string>
-  <string name="revanced_settings_search_history_summary_off">설정 검색 기록을 표시하지 않습니다</string>
   </patch>
   <patch id="misc.backgroundplayback.backgroundPlaybackPatch">
   <string name="revanced_shorts_disable_background_playback_title">Shorts 백그라운드 재생 비활성화하기</string>
@@ -1062,9 +1081,9 @@ YouTube Premium 사용자라면 이 설정은 필요하지 않을 수 있습니�
   <string name="revanced_sb_guidelines_popup_already_read">이미 읽음</string>
   <string name="revanced_sb_guidelines_popup_open">보기</string>
   <string name="revanced_sb_general">일반</string>
-  <string name="revanced_sb_toast_on_connection_error_title">API 사용 불가 메시지 표시하기</string>
-  <string name="revanced_sb_toast_on_connection_error_summary_on">SponsorBlock을 사용할 수 없을 경우에 팝업 메시지를 표시합니다</string>
-  <string name="revanced_sb_toast_on_connection_error_summary_off">SponsorBlock을 사용할 수 없을 경우에 팝업 메시지를 표시하지 않습니다</string>
+  <string name="revanced_sb_toast_on_connection_error">API 사용 불가 메시지 표시하기</string>
+  <string name="revanced_sb_toast_on_connection_error_sum_on">SponsorBlock을 사용할 수 없을 경우에 팝업 메시지를 표시합니다</string>
+  <string name="revanced_sb_toast_on_connection_error_sum_off">SponsorBlock을 사용할 수 없을 경우에 팝업 메시지를 표시하지 않습니다</string>
   <string name="revanced_sb_general_skipcount">건너뛴 횟수 기록 활성화하기</string>
   <string name="revanced_sb_general_skipcount_sum_on">구간 건너뛰기를 통해 절약한 시간을 SponsorBlock의 리더보드 시스템에 알려줍니다. 건너뛴 구간에 대한 정보가 서버에 전송됩니다</string>
   <string name="revanced_sb_general_skipcount_sum_off">건너뛴 횟수 기록을 비활성화합니다</string>
@@ -1479,11 +1498,6 @@ DeArrow에 대해 자세히 알아보려면 여기를 탭하세요"</string>
   <string name="revanced_external_browser_summary_on">앱 내에서 외부 링크를 열 경우에 외부 브라우저를 사용합니다</string>
   <string name="revanced_external_browser_summary_off">앱 내에서 외부 링크를 열 경우에 내부 브라우저를 사용합니다</string>
   </patch>
-  <patch id="misc.privacy.removeTrackingQueryParameterPatch">
-  <string name="revanced_remove_tracking_query_parameter_title">추적 쿼리를 삭제한 링크 공유하기</string>
-  <string name="revanced_remove_tracking_query_parameter_summary_on">링크를 공유할 경우에 URL에서 추적 쿼리 매개변수를 삭제합니다 (URL의 뒷부분 \'?si=...\' 이 삭제됨)</string>
-  <string name="revanced_remove_tracking_query_parameter_summary_off">링크를 공유할 경우에 URL에서 추적 쿼리 매개변수를 삭제하지 않습니다</string>
-  </patch>
   <patch id="video.audio.forceOriginalAudioPatch">
   <string name="revanced_force_original_audio_title">원본 오디오 언어 강제로 활성화하기</string>
   <string name="revanced_force_original_audio_summary_on">원본 오디오 언어를 사용 중입니다</string>
@@ -1564,10 +1578,7 @@ DeArrow에 대해 자세히 알아보려면 여기를 탭하세요"</string>
   </patch>
   <patch id="misc.fix.playback.spoofVideoStreamsPatch">
   <string name="revanced_spoof_video_streams_about_title">변경에 따른 부작용</string>
-  <string name="revanced_spoof_video_streams_about_android_title">Android 변경에 따른 부작용</string>
-  <string name="revanced_spoof_video_streams_about_android_summary">"• 오디오 트랙 메뉴가 표시되지 않습니다
-• 안정적인 볼륨을 사용할 수 없습니다"</string>
-  <string name="revanced_spoof_video_streams_about_ipados_summary">• 동영상이 1:00에 멈출 수 있으며, 일부 지역에서는 이용이 불가능할 수 있습니다</string>
+  <string name="revanced_spoof_video_streams_about_playback_failure">• 동영상이 1:00에 멈출 수 있으며, 일부 지역에서는 이용이 불가능할 수 있습니다</string>
   <string name="revanced_spoof_video_streams_about_experimental">• 실험용 클라이언트이며 언제든지 작동이 중단될 수 있습니다</string>
   <string name="revanced_spoof_video_streams_about_no_av1">• AV1 코덱이 지원되지 않습니다</string>
   <string name="revanced_spoof_video_streams_about_kids_videos">• Kids 동영상은 로그인을 하지 않았거나 시크릿 모드에서는 재생되지 않을 수 있습니다</string>

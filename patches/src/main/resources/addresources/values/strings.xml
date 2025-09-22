@@ -48,14 +48,28 @@ Second \"item\" text"</string>
             <string name="revanced_settings_search_hint">Search settings</string>
             <string name="revanced_settings_search_no_results_title">No results found for \'%s\'</string>
             <string name="revanced_settings_search_no_results_summary">Try another keyword</string>
+            <string name="revanced_settings_search_recent_searches">Recent searches</string>
             <string name="revanced_settings_search_remove_message">Remove from search history?</string>
+            <string name="revanced_settings_search_clear_history">Clear search history</string>
+            <string name="revanced_settings_search_clear_history_message">Are you sure you want to clear all search history?</string>
+            <string name="revanced_settings_search_tips_title">Search Tips</string>
+            <string name="revanced_settings_search_tips_summary">"• Tap a path to navigate to it
+• Long-press a setting to navigate to it
+• Press Enter to save a search query to history
+• Search ignores casing and punctuation
+• Parent settings appear above disabled child settings"</string>
+            <string name="revanced_settings_search_empty_history_title">Search history is empty</string>
+            <string name="revanced_settings_search_empty_history_summary">To save search history, type a search query and press Enter</string>
+            <string name="revanced_settings_search_history_title">Show settings search history</string>
+            <string name="revanced_settings_search_history_summary_on">Settings search history is shown</string>
+            <string name="revanced_settings_search_history_summary_off">Settings search history is not shown</string>
             <string name="revanced_show_menu_icons_title">Show ReVanced setting icons</string>
             <string name="revanced_show_menu_icons_summary_on">Setting icons are shown</string>
             <string name="revanced_show_menu_icons_summary_off">Setting icons are not shown</string>
             <string name="revanced_language_title">ReVanced language</string>
             <string name="revanced_language_user_dialog_message">"Translations for some languages may be missing or incomplete.
 
-To translate new languages visit translate.revanced.app"</string>
+To translate new languages or improve the existing translations, visit translate.revanced.app"</string>
             <string name="revanced_language_DEFAULT">App language</string>
             <string name="revanced_language_AM" translatable="false">አማርኛ</string>
             <string name="revanced_language_AR" translatable="false">العربية</string>
@@ -182,6 +196,14 @@ You will not be notified of any unexpected events."</string>
             <string name="revanced_debug_logs_clear_buffer_summary">Clears all stored ReVanced debug logs</string>
             <string name="revanced_debug_logs_clear_toast">Logs cleared</string>
         </patch>
+        <patch id="misc.privacy.sanitizeSharingLinksPatch">
+            <string name="revanced_sanitize_sharing_links_title">Remove tracking query parameter</string>
+            <string name="revanced_sanitize_sharing_links_summary_on">Tracking query parameter is removed from links</string>
+            <string name="revanced_sanitize_sharing_links_summary_off">Tracking query parameter is not removed from links</string>
+            <string name="revanced_replace_music_with_youtube_title">Change share links to youtube.com</string>
+            <string name="revanced_replace_music_with_youtube_summary_on">Shared links use youtube.com</string>
+            <string name="revanced_replace_music_with_youtube_summary_off">Shared links use music.youtube.com</string>
+        </patch>
     </app>
     <app id="youtube">
         <patch id="misc.settings.settingsPatch">
@@ -200,9 +222,6 @@ You will not be notified of any unexpected events."</string>
             <string name="revanced_restore_old_settings_menus_title">Restore old settings menus</string>
             <string name="revanced_restore_old_settings_menus_summary_on">Old settings menus are shown</string>
             <string name="revanced_restore_old_settings_menus_summary_off">Old settings menus are not shown</string>
-            <string name="revanced_settings_search_history_title">Show settings search history</string>
-            <string name="revanced_settings_search_history_summary_on">Settings search history is shown</string>
-            <string name="revanced_settings_search_history_summary_off">Settings search history is not shown</string>
         </patch>
         <patch id="misc.backgroundplayback.backgroundPlaybackPatch">
             <string name="revanced_shorts_disable_background_playback_title">Disable Shorts background play</string>
@@ -246,6 +265,7 @@ However, enabling this will also log some user data such as your IP address."</s
             <string name="revanced_hide_floating_microphone_button_summary_off">Floating microphone button in search is shown</string>
             <string name="revanced_hide_horizontal_shelves_title">Hide horizontal shelves</string>
             <string name="revanced_hide_horizontal_shelves_summary_on">"Horizontal shelves are hidden, such as:
+
 • Breaking news
 • Continue watching
 • Explore more channels
@@ -1128,9 +1148,9 @@ This feature works best with a video quality of 720p or lower and when using a v
             <string name="revanced_sb_guidelines_popup_already_read">Already read</string>
             <string name="revanced_sb_guidelines_popup_open">Show me</string>
             <string name="revanced_sb_general">General</string>
-            <string name="revanced_sb_toast_on_connection_error_title">Show a toast if API is not available</string>
-            <string name="revanced_sb_toast_on_connection_error_summary_on">Toast is shown if SponsorBlock is not available</string>
-            <string name="revanced_sb_toast_on_connection_error_summary_off">Toast is not shown if SponsorBlock is not available</string>
+            <string name="revanced_sb_toast_on_connection_error">Show a toast if API is not available</string>
+            <string name="revanced_sb_toast_on_connection_error_sum_on">Toast is shown if SponsorBlock is not available</string>
+            <string name="revanced_sb_toast_on_connection_error_sum_off">Toast is not shown if SponsorBlock is not available</string>
             <string name="revanced_sb_general_skipcount">Enable skip count tracking</string>
             <string name="revanced_sb_general_skipcount_sum_on">Lets the SponsorBlock leaderboard know how much time is saved. A message is sent to the leaderboard each time a segment is skipped</string>
             <string name="revanced_sb_general_skipcount_sum_off">Skip count tracking is not enabled</string>
@@ -1550,11 +1570,6 @@ Enabling this can unlock higher video qualities"</string>
             <string name="revanced_external_browser_summary_on">Opening links in external browser</string>
             <string name="revanced_external_browser_summary_off">Opening links in in-app browser</string>
         </patch>
-        <patch id="misc.privacy.removeTrackingQueryParameterPatch">
-            <string name="revanced_remove_tracking_query_parameter_title">Remove tracking query parameter</string>
-            <string name="revanced_remove_tracking_query_parameter_summary_on">Tracking query parameter is removed from links</string>
-            <string name="revanced_remove_tracking_query_parameter_summary_off">Tracking query parameter is not removed from links</string>
-        </patch>
         <patch id="video.audio.forceOriginalAudioPatch">
             <string name="revanced_force_original_audio_title">Force original audio language</string>
             <string name="revanced_force_original_audio_summary_on">Using original audio language</string>
@@ -1635,12 +1650,11 @@ Enabling this can unlock higher video qualities"</string>
         </patch>
         <patch id="misc.fix.playback.spoofVideoStreamsPatch">
             <string name="revanced_spoof_video_streams_about_title">Spoofing side effects</string>
-            <string name="revanced_spoof_video_streams_about_android_title">Android spoofing side effects</string>
-            <string name="revanced_spoof_video_streams_about_android_summary">"• Audio track menu is missing
-• Stable volume is not available"</string>
-            <string name="revanced_spoof_video_streams_about_ipados_summary">• Video may stop at 1:00, or may not be available in some regions</string>
             <string name="revanced_spoof_video_streams_about_experimental">• Experimental client and may stop working anytime</string>
+            <string name="revanced_spoof_video_streams_about_playback_failure">• Video may stop at 1:00, or may not be available in some regions</string>
+            <string name="revanced_spoof_video_streams_about_no_audio_tracks">• Audio track menu is missing</string>
             <string name="revanced_spoof_video_streams_about_no_av1">• No AV1 video codec</string>
+            <string name="revanced_spoof_video_streams_about_no_stable_volume">• Stable volume is not available</string>
             <string name="revanced_spoof_video_streams_about_kids_videos">• Kids videos may not play when logged out or in incognito mode</string>
             <!-- "Force original audio" should use the same text as revanced_force_original_audio_title -->
             <string name="revanced_spoof_video_streams_about_no_force_original_audio">• Force original audio is not available</string>
